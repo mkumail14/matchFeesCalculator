@@ -3,10 +3,10 @@ function submitRegisterForm(){
     var groundPlayers=document.getElementById('groundSize').value
     var estimatedGameTime=document.getElementById('estimatedGameTime').value
     var gameFees=document.getElementById('gameFees').value
-    
+
     if(totalPlayers=='' || groundPlayers=='' || estimatedGameTime=='' || gameFees=='' || estimatedGameTime<=0 || totalPlayers<=0 || groundPlayers<=0 || gameFees<=0){
         document.getElementById('err').innerText='Please input all data correctly.';
-    }else if(groundPlayers<totalPlayers){
+    }else if(groundPlayers > totalPlayers){
         document.getElementById('err').innerText='Total players should be more then ground size.';
     }else{
         document.getElementById('err').innerText='';
