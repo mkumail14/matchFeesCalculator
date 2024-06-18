@@ -10,8 +10,7 @@
 
     <div id="registerForm" class="form registerForm">
         <p class="title">Register Match</p>
-        <p id="dateNow"></p>
-        <p id="timeNow"></p>
+        <p style="color: #00bfff;" id="dateNow"></p>
             <div class="flex">
             <label>
                 <input id="totalPlayers" class="input" type="number" placeholder="" required="">
@@ -39,6 +38,21 @@
             
         
         <button onclick="submitRegisterForm()" class="submit">Generate Form</button>
+    </div>
+
+
+
+
+    <div id="registerGKForm" class="form registerForm">
+        <p class="title">Register GoalKeeper</p>
+        <p style="color: #00bfff;" id="dateNow"></p>
+            <div class="flex">
+    <div class="input2-group">
+        <input type="text" id="gkName" class="input2"  placeholder="Enter GoalKeeper Name" autocomplete="off">
+        <input class="button--submit" onclick="getGkName()" value="Enter" type="submit">
+        <p style="color: brown; justify-content: center; display: flex;" id="err1"></p>
+    </div>
+    </div>
     </div>
     
     <script src="app.js"></script>
