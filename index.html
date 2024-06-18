@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Match Fees Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="registerForm" class="form registerForm">
+        <p class="title">Register Match</p>
+        <p id="dateNow"></p>
+        <p id="timeNow"></p>
+            <div class="flex">
+            <label>
+                <input id="totalPlayers" class="input" type="number" placeholder="" required="">
+                <span>Players Availible</span>
+            </label>
+    <br>
+            <label>
+                <input id="groundSize" class="input" type="number" placeholder="" required="">
+                <span>Ground Size</span>
+            </label>
+        </div>  
+        <br>
+        <label>
+            <input class="input" id="estimatedGameTime" type="number" placeholder="" required="">
+            <span>Estimated Game Time In Minutes Only</span>
+        </label> 
+        <br>
+        <label>
+            <input class="input" id="gameFees" type="number" placeholder="" required="">
+            <span>Game Fees in Rupees</span>
+        </label> 
+        <br>
+        <p style="color: brown; justify-content: center; display: flex;" id="err"></p>
+        <br>
+            
+        
+        <button onclick="submitRegisterForm()" class="submit">Generate Form</button>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
