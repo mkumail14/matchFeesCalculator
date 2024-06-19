@@ -11,12 +11,12 @@
     <div id="registerForm" class="form registerForm">
         <p class="title">Register Match</p>
         <p style="color: #00bfff;" id="dateNow"></p>
-            <div class="flex">
+        <div class="flex">
             <label>
                 <input id="totalPlayers" class="input" type="number" placeholder="" required="">
-                <span>Players Availible</span>
+                <span>Players Available</span>
             </label>
-    <br>
+            <br>
             <label>
                 <input id="groundSize" class="input" type="number" placeholder="" required="">
                 <span>Ground Size</span>
@@ -35,25 +35,33 @@
         <br>
         <p style="color: brown; justify-content: center; display: flex;" id="err"></p>
         <br>
-            
-        
         <button onclick="submitRegisterForm()" class="submit">Generate Form</button>
     </div>
 
-
-
-
-    <div id="registerGKForm" class="form registerForm">
+    <div id="registerGKForm" class="form registerForm" style="display:none;">
         <p class="title">Register GoalKeeper</p>
         <p style="color: #00bfff;" id="dateNow"></p>
-            <div class="flex">
-    <div class="input2-group">
-        <input type="text" id="gkName" class="input2"  placeholder="Enter GoalKeeper Name" autocomplete="off">
-        <input class="button--submit" onclick="getGkName()" value="Enter" type="submit">
-        <p style="color: brown; justify-content: center; display: flex;" id="err1"></p>
+        <div class="flex">
+            <div class="input2-group">
+                <input type="text" id="gkName" class="input2" placeholder="Enter GoalKeeper Name" autocomplete="off">
+                <input class="button--submit" onclick="getGkName()" value="Enter" type="submit">
+                <p style="color: brown; justify-content: center; display: flex;" id="err1"></p>
+            </div>
+        </div>
     </div>
+
+    <div id="registerPlayersForm" class="form registerForm" style="display:none;">
+        <p id="playerNo" class="title">Register Player</p>
+        <p style="color: #00bfff;" id="dateNow"></p>
+        <div id="playerInputs" style="flex-direction: column;" class="flex">
+            
+        </div>
+        <br>
+        <p style="color: brown; justify-content: center; display: flex;" id="err2"></p>
+        <br>
+        <button onclick="submitPlayers()" class="submit">Submit Players</button>
     </div>
-    </div>
+
     
     <script src="app.js"></script>
 </body>

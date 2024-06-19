@@ -146,6 +146,7 @@
   .input-group {
     display: flex;
     align-items: center;
+    flex-direction: column;
   }
   
   .input2 {
